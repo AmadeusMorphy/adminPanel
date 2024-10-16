@@ -1,0 +1,16 @@
+
+<div class="loginContainer flex justify-content-center align-items-center">
+    <form class="form-control" [formGroup]="userData" (ngSubmit)="onLogin()" action="">
+        <p class="title">Login</p>
+        <div class="input-field">
+          <input formControlName="email" class="input" type="text" />
+          <label class="label" for="input">Enter Email</label>
+        </div>
+        <div class="input-field">
+          <input formControlName="password" class="input" type="password" />
+          <label class="label" for="input">Enter Password</label>
+        </div>
+        <a>Forgot your password?</a>
+        <button pButton class="flex justify-content-center text-2xl mt-4">Sign In</button>
+      </form>
+</div>

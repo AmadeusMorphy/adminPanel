@@ -1,0 +1,13 @@
+<div class="container flex gap-4">
+    <div class="card flex justify-content-between w-3 p-5" *ngFor="let data of value">
+        <div class="contents fel">
+            <div class="color">{{data.label}}</div>
+            <div class="title">
+                <h2>{{data.value}}</h2>
+            </div>
+        </div>
+        <div class="detail">
+            <i [className]="data.icon"></i>
+        </div>
+    </div>
+</div>
